@@ -13,7 +13,11 @@
 }
 
 .part-container {
+  text-align: center;
   height: 320px;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
 }
 
 .build-container {
@@ -28,5 +32,5 @@
 }
 
 .grid-container.left {
-  border-right: 2px solid black;
+  border-right: 1px solid lightgrey;
 }

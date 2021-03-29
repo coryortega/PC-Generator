@@ -8,12 +8,23 @@ img {
     height: 150px;
 }
 
+.MuiCardMedia-img {
+    width: auto;
+    height: 150px;
+}
+
 .title {
+    border: 1px solid black;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     margin: 0 0 1em 0;
     overflow: hidden;
+}
+
+.title-container {
+    height: 100px;
+    border: 1px solid black;
 }
 
 h3 {

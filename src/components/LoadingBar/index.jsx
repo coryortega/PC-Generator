@@ -6,6 +6,8 @@ const useStyles = makeStyles((theme) => ({
 
   root: {
     width: 300,
+    paddingTop:17,
+    height:'90px',
     '& > * + *': {
       marginTop: theme.spacing(2),
     },
