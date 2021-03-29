@@ -9,6 +9,9 @@ const useStyles = makeStyles({
   root: {
     width: 300,
   },
+  button: {
+    marginBottom: 15
+  }
 });
 
 export default function ContinuousSlider({ budget, setBudget }) {
@@ -26,10 +29,19 @@ export default function ContinuousSlider({ budget, setBudget }) {
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs>
-          <Slider value={value} onChange={handleChange} aria-labelledby="continuous-slider" max={5000}/>
+          <Slider
+          defaultValue={1000}
+          aria-labelledby="discrete-slider-small-steps"
+          step={100}
+          marks
+          min={0}
+          max={5000}
+          onChange={handleChange}
+          value={value}
+          />
         </Grid>
       </Grid>
-      <Button onClick={() => setBudget(value)} variant="contained" color="primary">Submit</Button>
+      <Button className={classes.button} onClick={() => setBudget(value)} variant="contained" color="primary">Submit</Button>
     </div>
   );
 }

@@ -1,4 +1,22 @@
 a {
     text-decoration: none;
-    color: black
+    color: black;
+}
+
+img {
+    width: auto;
+    height: 150px;
+}
+
+.title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    margin: 0 0 1em 0;
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 1rem;
+    text-overflow: ellipsis;
 }

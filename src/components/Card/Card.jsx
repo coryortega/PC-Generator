@@ -8,7 +8,9 @@ function Card({ src, name, href, price }) {
             <div className="container">
                 <img src={src}/>
                 <p>${price}</p>
-                <h3>{name}</h3>
+                <div className="title">
+                    <h3>{name}</h3>
+                </div>
             </div>
         </a>
     )
